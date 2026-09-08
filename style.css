@@ -1,15 +1,102 @@
-/* Base styles for the Student Information System.
-   Student 2 (UI Developer) will improve this on feature/ui. */
+/* Modern Glassmorphism UI - Student 2 */
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #1d2671, #c33764);
 }
 
+/* Page heading */
 h1 {
-  font-size: 24px;
+  color: white;
+  font-size: 34px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
 }
 
+/* Student information card */
+#student-info {
+  width: 380px;
+  padding: 28px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+/* Card heading */
+#student-info::before {
+  content: "Student Profile";
+  display: block;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  opacity: 0.75;
+  margin-bottom: 18px;
+}
+
+/* Individual student details */
+#student-info p {
+  margin: 12px 0;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+}
+
+/* Icons for each detail */
+#student-info p:nth-child(1)::before {
+  content: "👤";
+  margin-right: 12px;
+}
+
+#student-info p:nth-child(2)::before {
+  content: "🆔";
+  margin-right: 12px;
+}
+
+#student-info p:nth-child(3)::before {
+  content: "🎓";
+  margin-right: 12px;
+}
+
+/* Hover effect on student details */
+#student-info p:hover {
+  background: rgba(255, 255, 255, 0.22);
+  transform: translateX(5px);
+}
+
+/* Show Details button */
 button {
-  margin-top: 10px;
+  margin-top: 25px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  color: #c33764;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
