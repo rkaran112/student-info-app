@@ -25,6 +25,7 @@ h1 {
 
 /* Student information card */
 #student-info {
+  display: none;
   width: 380px;
   padding: 28px;
   border-radius: 20px;
