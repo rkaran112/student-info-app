@@ -61,17 +61,17 @@ h1 {
 }
 
 /* Icons for each detail */
-#student-info p:nth-child(1)::before {
+#student-info > p:nth-child(1)::before {
   content: "👤";
   margin-right: 12px;
 }
 
-#student-info p:nth-child(2)::before {
+#student-info > p:nth-child(2)::before {
   content: "🆔";
   margin-right: 12px;
 }
 
-#student-info p:nth-child(3)::before {
+#student-info > p:nth-child(3)::before {
   content: "🎓";
   margin-right: 12px;
 }
